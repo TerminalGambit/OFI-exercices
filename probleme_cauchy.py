@@ -13,3 +13,12 @@ def cauchy(n):
 
 for i in range(10):
     print(cauchy(i))
+
+# an = cn - cn-1
+# an-1 = cn-1 - cn-3
+
+def cauchy2(n):
+    
+
+for i in range(10):
+    print(cauchy2(i))
