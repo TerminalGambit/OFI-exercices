@@ -11,9 +11,4 @@ def cauchy(n):
     else:
         return cauchy(n-1) + cauchy(n-2) - cauchy(n-3)
 
-for i in range(10):
-    print(cauchy(i))
-
-# an = cn - cn-1
-# an-1 = cn-1 - cn-3
-
+print(cauchy(50), cauchy(73))
