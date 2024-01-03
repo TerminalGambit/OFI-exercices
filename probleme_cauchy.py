@@ -12,7 +12,7 @@ def cauchy(n, memo={}):
         result = 1
     else:
         result = cauchy(n-1, memo) + cauchy(n-2, memo) - cauchy(n-3, memo)
-    
+
     memo[n] = result
     return result
 
@@ -32,7 +32,7 @@ def cauchy2(n, memo={}):
         result = 1
     else:
         result = cauchy2(n-2, memo) + n
-    
+
     memo[n] = result
     return result
 
@@ -50,7 +50,7 @@ def cauchy3(n, memo={}):
         result = 0
     else:
         result = cauchy3(n-1, memo) + n
-    
+
     memo[n] = result
     return result
 
@@ -71,7 +71,7 @@ def cauchy4(n, memo={}):
         result = 0
     else:
         result = 2*n*cauchy4(n-1, memo) + 1
-    
+
     memo[n] = result
     return result
 
