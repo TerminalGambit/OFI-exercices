@@ -71,7 +71,7 @@ def cauchy4(n, memo={}):
     return result
 
 def test_solution(f):
-    for n in range(10):
+    for n in range(100, 110):
         print(f(n))
 
 def cas_n(n):
