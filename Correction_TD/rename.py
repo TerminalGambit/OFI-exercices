@@ -7,7 +7,7 @@ def rename_files(directory):
             os.rename(os.path.join(directory, filename), os.path.join(directory, new_filename))
 
 # Specify the directory where the files are located
-directory = "/Users/jackmassey/Desktop/Bureau/OFI-exercices/Correction_TD/"
+directory = "."
 
 # Call the function to rename the files
 rename_files(directory)
