@@ -2,7 +2,7 @@ import os
 
 def rename_files(directory):
     for filename in os.listdir(directory):
-        if filename.startswith("TD") and filename.endswith(".pdf"):
+        if filename.startswith("0") and filename.endswith(".pdf"):
             new_filename = "TD" + filename[1] + ".pdf"
             os.rename(os.path.join(directory, filename), os.path.join(directory, new_filename))
 
