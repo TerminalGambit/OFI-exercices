@@ -48,4 +48,58 @@ Cette méthode est étroitement liée à des concepts tels que les partitions de
 \section{Conclusion}
 La méthode Stars and Bars offre une approche visuelle et intuitive pour résoudre des problèmes de combinatoire, essentielle pour les étudiants en mathématiques avancées et en informatique. Elle permet de résoudre efficacement des problèmes de distribution d'objets identiques dans différents groupes, ouvrant ainsi la voie à de nombreuses applications pratiques.
 
+\newpage
+
+\section{Exercices et Solutions Détaillées}
+
+\subsection{Exercice 1}
+Combien de façons peut-on répartir 5 pommes identiques entre 2 enfants?
+\paragraph{Solution:}
+Dans ce problème, nous avons 5 pommes (objets identiques) à répartir entre 2 enfants (groupes). Selon la méthode Stars and Bars, cela équivaut à placer 5 étoiles (pommes) et 1 barre (pour créer 2 groupes) dans une séquence. Le nombre total de façons de le faire est donné par le coefficient binomial \(\binom{5 + 2 - 1}{2 - 1} = \binom{6}{1} = 6\). 
+
+\subsection{Exercice 2}
+Trouvez le nombre de solutions entières de l'équation \( x + y = 4 \) où \( x, y \geq 0 \).
+\paragraph{Solution:}
+Ici, nous cherchons à répartir 4 unités (représentées par des étoiles) entre deux variables (groupes), \(x\) et \(y\). On place une barre pour séparer les étoiles en deux groupes. Le nombre de façons de placer cette barre dans les 5 espaces possibles (4 étoiles + 1 barre) est \(\binom{4 + 2 - 1}{2 - 1} = \binom{5}{1} = 5\).
+
+\subsection{Exercice 3}
+De combien de manières différentes pouvez-vous distribuer 3 billes identiques dans 4 boîtes?
+\paragraph{Solution:}
+Dans ce cas, nous avons 3 billes et 4 boîtes. Le nombre de façons de placer les 3 billes dans les 4 boîtes est comme placer 3 étoiles et 3 barres (pour créer 4 groupes). Le nombre total de dispositions est \(\binom{3 + 4 - 1}{4 - 1} = \binom{6}{3} = 20\).
+
+\subsection{Exercice 4}
+Trouvez le nombre de façons de répartir 6 livres identiques sur 3 étagères distinctes.
+\paragraph{Solution:}
+Nous appliquons la méthode Stars and Bars pour placer 6 livres (étoiles) sur 3 étagères (groupes), ce qui nécessite 2 barres. Le nombre de façons est donc \(\binom{6 + 3 - 1}{3 - 1} = \binom{8}{2} = 28\).
+
+\subsection{Exercice 5}
+Combien de solutions positives l'équation \( x + y + z = 6 \) possède-t-elle?
+\paragraph{Solution:}
+Pour des solutions strictement positives, chaque variable doit être au moins 1. Nous répartissons donc 6 - 3 = 3 unités entre les 3 variables. Le nombre de façons est \(\binom{6 - 3 + 3 - 1}{3 - 1} = \binom{5}{2} = 10\).
+
+\subsection{Exercice 6}
+Si vous avez 8 fleurs identiques à placer dans 5 vases, combien de dispositions différentes existe-t-il?
+\paragraph{Solution:}
+Ici, nous avons 8 fleurs (étoiles) et 5 vases (groupes), nécessitant 4 barres. Le nombre de façons est \(\binom{8 + 5 - 1}{5 - 1} = \binom{12}{4} = 495\).
+
+\subsection{Exercice 7}
+Déterminez le nombre de manières de diviser 10 fruits identiques entre 4 personnes.
+\paragraph{Solution:}
+Nous utilisons la formule Stars and Bars pour diviser 10 fruits entre 4 personnes, soit \(\binom{10 + 4 - 1}{4 - 1} = \binom{13}{3} = 286\).
+
+\subsection{Exercice 8}
+Combien de solutions l'équation \( 2x + 3y = 12 \) a-t-elle pour \( x, y \) entiers positifs?
+\paragraph{Solution:}
+Cette équation n'est pas directement résoluble par Stars and Bars car elle a des coefficients autres que 1. Nous devons d'abord la transformer ou utiliser des méthodes de résolution d'équations diophantiennes.
+
+\subsection{Exercice 9}
+Trouvez le nombre de façons de placer 7 pièces identiques dans 2 tiroirs, de sorte que chaque tiroir contienne au moins une pièce.
+\paragraph{Solution:}
+Dans ce cas, puisque chaque tiroir doit contenir au moins une pièce, nous considérons 7 - 2 = 5 pièces à distribuer librement. Le nombre de façons est \(\binom{7 - 2 + 2 - 1}{2 - 1} = \binom{6}{1} = 6\).
+
+\subsection{Exercice 10}
+Combien de solutions l'équation \( x + y + z + w = 15 \) a-t-elle si \( x, y, z, w \) sont des entiers non négatifs?
+\paragraph{Solution:}
+Nous distribuons 15 unités entre 4 variables. Utilisant Stars and Bars, le nombre total de façons est \(\binom{15 + 4 - 1}{4 - 1} = \binom{18}{3}\).
+
 \end{document}
