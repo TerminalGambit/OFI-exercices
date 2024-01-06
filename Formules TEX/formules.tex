@@ -12,34 +12,36 @@
 
 \section{Principes de Base}
 \begin{itemize}
-    \item \textbf{Principe Fondamental de Dénombrement:} Si une opération peut se faire de \(m\) manières et une autre opération peut se faire de \(n\) manières, alors les deux opérations peuvent se faire de \(m \times n\) manières.
+    \item \textbf{Principe Fondamental de Dénombrement:} Si une opération A peut être réalisée de \(m\) manières différentes et une opération B indépendante de \(n\) manières différentes, alors il y a \(m \times n\) façons de réaliser les deux opérations.
 \end{itemize}
 
 \section{Permutations}
 \begin{itemize}
-    \item \textbf{Permutations de \(n\) objets distincts:} \(P(n) = n!\)
-    \item \textbf{Permutations de \(n\) objets avec répétition:} \(P_{n_1, n_2, \ldots, n_k} = \frac{n!}{n_1! \cdot n_2! \cdots n_k!}\) où \(n_1, n_2, \ldots, n_k\) sont les nombres d'objets identiques.
+    \item \textbf{Permutations de \(n\) objets distincts:} \(P(n) = n!\). Utilisée lorsque l'ordre des objets est important.
+    \item \textbf{Permutations avec répétition:} Si dans un ensemble de \(n\) objets, \(n_1\) objets sont du type 1, \(n_2\) du type 2, ..., \(n_k\) du type \(k\), alors le nombre total de permutations est \(\frac{n!}{n_1! \cdot n_2! \cdots n_k!}\).
 \end{itemize}
 
 \section{Combinaisons}
 \begin{itemize}
-    \item \textbf{Combinaisons de \(n\) objets pris \(k\) à la fois:} \(C(n, k) = \binom{n}{k} = \frac{n!}{k!(n-k)!}\)
+    \item \textbf{Combinaisons de \(n\) objets pris \(k\) à la fois:} \(C(n, k) = \binom{n}{k} = \frac{n!}{k!(n-k)!}\). Utilisée pour compter le nombre de façons de choisir \(k\) objets parmi \(n\), sans tenir compte de l'ordre.
 \end{itemize}
 
 \section{Arrangements}
 \begin{itemize}
-    \item \textbf{Arrangements de \(n\) objets pris \(k\) à la fois:} \(A(n, k) = \frac{n!}{(n-k)!}\)
+    \item \textbf{Arrangements de \(n\) objets pris \(k\) à la fois:} \(A(n, k) = \frac{n!}{(n-k)!}\). Similaire aux permutations, mais seulement \(k\) objets sont choisis parmi \(n\).
 \end{itemize}
 
 \section{Formules Spécifiques}
 \begin{itemize}
-    \item \textbf{Nombre de façons de partitionner un entier \(n\):} Utilisation de la fonction de partition \(p(n)\).
-    \item \textbf{Formule de Hardy-Ramanujan (approximation):} \(p(n) \approx \frac {1} {4n\sqrt{3}} e^{\pi \sqrt{\frac{2n}{3}}}\)
+    \item \textbf{Partition d'un entier \(n\):} Le nombre de façons de diviser \(n\) en sommes d'entiers positifs. Calculé par la fonction de partition \(p(n)\).
+    \item \textbf{Formule de Hardy-Ramanujan (approximation):} \(p(n) \approx \frac {1} {4n\sqrt{3}} e^{\pi \sqrt{\frac{2n}{3}}}\). Donne une approximation pour les grands nombres.
 \end{itemize}
 
 \section{Applications Pratiques}
 \begin{itemize}
-    \item Expliquer comment chaque formule peut être utilisée dans des situations pratiques, telles que le dénombrement de combinaisons dans un jeu, l'organisation d'objets, etc.
+    \item \textbf{Permutations:} Utilisées pour déterminer le nombre de façons différentes d'organiser des éléments. Par exemple, l'ordre des livres sur une étagère ou l'ordre des coureurs dans une course.
+    \item \textbf{Combinaisons:} Utiles pour calculer le nombre de groupes possibles. Par exemple, sélectionner une équipe à partir d'un groupe plus large, ou choisir des sujets dans un questionnaire.
+    \item \textbf{Arrangements:} Appliqués lorsque l'ordre est important mais que seuls quelques éléments sont choisis. Par exemple, l'attribution des premières places dans une compétition.
 \end{itemize}
 
 \end{document}
