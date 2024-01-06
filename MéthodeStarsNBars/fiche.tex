@@ -1,0 +1,51 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+\title{Approfondissement de la Méthode Stars and Bars en Combinatoire}
+\author{Jack Massey}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+La méthode Stars and Bars est un outil essentiel en combinatoire, permettant de résoudre des problèmes de distribution d'objets identiques dans différents groupes. Cette approche trouve ses applications dans divers domaines tels que les mathématiques, la statistique et l'informatique, offrant une méthode intuitive pour aborder des problèmes complexes de partition.
+
+\section{Histoire et Origine}
+Cette méthode a été développée dans le contexte de la théorie des nombres et de la combinatoire. Elle est souvent attribuée à des travaux de mathématiciens tels que Ramanujan et Sylvester.
+
+\section{Définition et Principe}
+La méthode Stars and Bars est utilisée pour déterminer le nombre de façons de distribuer \( n \) objets identiques dans \( k \) groupes, où les groupes peuvent être vides. Elle repose sur le principe de la correspondance entre les distributions d'objets et les arrangements de barres et d'étoiles.
+
+\section{Formulation Mathématique}
+La formule fondamentale de la méthode est donnée par:
+\begin{equation}
+    \binom{n + k - 1}{k - 1} = \binom{n + k - 1}{n}
+\end{equation}
+où \( n \) est le nombre d'objets à distribuer, et \( k \) est le nombre de groupes. Cette formule peut être dérivée à partir du principe de la correspondance mentionné précédemment.
+
+\section{Exemple Illustratif}
+Considérons le problème de distribution de 3 balles identiques dans 2 boîtes. Les différentes distributions peuvent être représentées comme suit: 
+\begin{itemize}
+    \item \( \{**|*\} \) - 2 balles dans la première boîte, 1 balle dans la deuxième boîte.
+    \item \( \{*|**\} \) - 1 balle dans la première boîte, 2 balles dans la deuxième boîte.
+\end{itemize}
+
+\section{Applications Pratiques}
+La méthode Stars and Bars est utilisée dans plusieurs domaines tels que la distribution de ressources, la génération de partitions d'ensembles, la résolution de problèmes de probabilité et la modélisation de systèmes de files d'attente.
+
+\section{Exercices pour les Étudiants}
+1. Comment distribuer 5 pommes identiques entre 3 personnes?
+2. Trouvez le nombre de solutions de l'équation \(x_1 + x_2 + x_3 = 10\), où \(x_1\), \(x_2\), et \(x_3\) sont des entiers positifs.
+
+\section{Liens avec d'Autres Domaines de Mathématiques}
+Cette méthode est étroitement liée à des concepts tels que les partitions de nombres, les arrangements, les coefficients binomiaux et les polynômes génératrices.
+
+\section{Conclusion}
+La méthode Stars and Bars offre une approche visuelle et intuitive pour résoudre des problèmes de combinatoire, essentielle pour les étudiants en mathématiques avancées et en informatique. Elle permet de résoudre efficacement des problèmes de distribution d'objets identiques dans différents groupes, ouvrant ainsi la voie à de nombreuses applications pratiques.
+
+\end{document}
