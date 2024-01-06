@@ -1,0 +1,45 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb}
+
+\title{Fiche Récapitulative: Formules de Dénombrement}
+\author{Jack Massey}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Principes de Base}
+\begin{itemize}
+    \item \textbf{Principe Fondamental de Dénombrement:} Si une opération peut se faire de \(m\) manières et une autre opération peut se faire de \(n\) manières, alors les deux opérations peuvent se faire de \(m \times n\) manières.
+\end{itemize}
+
+\section{Permutations}
+\begin{itemize}
+    \item \textbf{Permutations de \(n\) objets distincts:} \(P(n) = n!\)
+    \item \textbf{Permutations de \(n\) objets avec répétition:} \(P_{n_1, n_2, \ldots, n_k} = \frac{n!}{n_1! \cdot n_2! \cdots n_k!}\) où \(n_1, n_2, \ldots, n_k\) sont les nombres d'objets identiques.
+\end{itemize}
+
+\section{Combinaisons}
+\begin{itemize}
+    \item \textbf{Combinaisons de \(n\) objets pris \(k\) à la fois:} \(C(n, k) = \binom{n}{k} = \frac{n!}{k!(n-k)!}\)
+\end{itemize}
+
+\section{Arrangements}
+\begin{itemize}
+    \item \textbf{Arrangements de \(n\) objets pris \(k\) à la fois:} \(A(n, k) = \frac{n!}{(n-k)!}\)
+\end{itemize}
+
+\section{Formules Spécifiques}
+\begin{itemize}
+    \item \textbf{Nombre de façons de partitionner un entier \(n\):} Utilisation de la fonction de partition \(p(n)\).
+    \item \textbf{Formule de Hardy-Ramanujan (approximation):} \(p(n) \approx \frac {1} {4n\sqrt{3}} e^{\pi \sqrt{\frac{2n}{3}}}\)
+\end{itemize}
+
+\section{Applications Pratiques}
+\begin{itemize}
+    \item Expliquer comment chaque formule peut être utilisée dans des situations pratiques, telles que le dénombrement de combinaisons dans un jeu, l'organisation d'objets, etc.
+\end{itemize}
+
+\end{document}
