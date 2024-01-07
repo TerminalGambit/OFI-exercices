@@ -10,4 +10,4 @@ truth_table['¬r'] = ~truth_table['r']
 truth_table['(p → q) ∧ ¬r'] = truth_table['p → q'] & truth_table['¬r']
 truth_table['¬p'] = ~truth_table['p']
 
-truth_table[['p', 'q', 'r', 'p → q', '¬r', '(p → q) ∧ ¬r', '¬p']]
+print(truth_table[['p', 'q', 'r', 'p → q', '¬r', '(p → q) ∧ ¬r', '¬p']])
