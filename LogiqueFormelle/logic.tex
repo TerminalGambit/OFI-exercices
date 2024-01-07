@@ -1,0 +1,80 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb}
+
+\title{Équivalences Logiques en Logique Formelle}
+\author{Votre Nom}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Introduction}
+Brève introduction sur les équivalences logiques...
+
+\section*{Table des Équivalences Logiques}
+\begin{itemize}
+    \item \textbf{Unité} : \( (p \land \text{T}) \equiv p \), \( (p \lor \text{F}) \equiv p \)
+    \item \textbf{Absorption} : \( (p \land \text{F}) \equiv \text{F} \), \( (p \lor \text{T}) \equiv \text{T} \)
+    \item \textbf{Idempotence} : \( (p \land p) \equiv p \), \( (p \lor p) \equiv p \)
+    \item \textbf{Double Négation} : \( \neg(\neg p) \equiv p \)
+    \item \textbf{Commutativité} : \( (p \land q) \equiv (q \land p) \), \( (p \lor q) \equiv (q \lor p) \)
+    \item \textbf{Associativité} : \( ((p \land q) \land r) \equiv (p \land (q \land r)) \), \( ((p \lor q) \lor r) \equiv (p \lor (q \lor r)) \)
+    \item \textbf{Distributivité} : \( (p \land (q \lor r)) \equiv ((p \land q) \lor (p \land r)) \), \( (p \lor (q \land r)) \equiv ((p \lor q) \land (p \lor r)) \)
+    \item \textbf{Sous-summation} : \( (p \land (p \lor q)) \equiv p \), \( (p \lor (p \land q)) \equiv p \)
+    \item \textbf{Résolution} : \( (p \land (\neg p \lor q)) \equiv (p \land q) \), \( (p \lor (\neg p \land q)) \equiv (p \lor q) \)
+    \item \textbf{Lois de De Morgan} : \( \neg(p \lor q) \equiv (\neg p \land \neg q) \), \( \neg(p \land q) \equiv (\neg p \lor \neg q) \)
+    \item \textbf{Implication} : \( (p \rightarrow p) \equiv \text{T} \), \( (p \rightarrow (p \lor q)) \equiv \text{T} \), \( (p \rightarrow (q \rightarrow p)) \equiv \text{T} \), etc.
+\end{itemize}
+
+\section{Tautologies et Contradictions}
+Une tautologie est une proposition qui est toujours vraie, peu importe la vérité des variables qu'elle contient. Par exemple, \( p \lor \neg p \) est une tautologie. Une contradiction est une proposition toujours fausse, comme \( p \land \neg p \).
+
+\section{Implications et Inférences}
+L'implication logique (notée \( p \rightarrow q \)) est une relation entre deux propositions où si \( p \) est vraie, alors \( q \) est également vraie. Modus Ponens et Modus Tollens sont des formes d'inférence utilisées en logique.
+
+\section{Quantificateurs et leur Utilisation}
+Les quantificateurs universels (notés \( \forall \)) et existentiels (notés \( \exists \)) sont utilisés pour indiquer respectivement que quelque chose est vrai pour tous les éléments d'un ensemble ou pour au moins un élément de cet ensemble.
+
+\section{Tableaux de Vérité}
+Les tableaux de vérité sont des outils utilisés pour déterminer la validité d'une proposition logique. Ils représentent toutes les combinaisons possibles des valeurs de vérité des variables.
+
+\section{Règles d'Inférence}
+Les règles d'inférence sont des principes utilisés pour déduire une proposition à partir d'une autre. Par exemple, la règle de la simplification permet de passer de \( p \land q \) à \( p \).
+
+\newpage
+
+\section{Exemples et Exercices}
+\subsection{Exercices}
+\begin{enumerate}
+    \item Montrez que l'expression suivante est une tautologie: \((p \rightarrow q) \lor (q \rightarrow p)\).
+    \item Prouvez que \((p \land (p \rightarrow q)) \rightarrow q\) est une tautologie en utilisant un tableau de vérité.
+    \item Démontrez que \(\neg(p \rightarrow q) \equiv p \land \neg q\) en utilisant les lois de De Morgan.
+    \item Soit l'expression \((p \rightarrow (q \land r)) \rightarrow ((p \rightarrow q) \land (p \rightarrow r))\). Utilisez les règles d'inférence pour prouver qu'il s'agit d'une tautologie.
+    \item Prouvez ou réfutez la validité de l'argument suivant: "Si il pleut, alors la rue sera mouillée. La rue n'est pas mouillée. Donc, il ne pleut pas."
+\end{enumerate}
+
+\subsection{Solutions}
+\begin{enumerate}
+    \item L'expression est une tautologie car dans tous les cas de vérité possibles pour \(p\) et \(q\), l'expression est vraie.
+    \item Tableau de vérité :
+    \begin{center}
+    \begin{tabular}{|c|c|c|c|}
+    \hline
+    \(p\) & \(q\) & \(p \rightarrow q\) & \((p \land (p \rightarrow q)) \rightarrow q\) \\
+    \hline
+    V & V & V & V \\
+    V & F & F & V \\
+    F & V & V & V \\
+    F & F & V & V \\
+    \hline
+    \end{tabular}
+    \end{center}
+    \item \(\neg(p \rightarrow q) \equiv \neg(\neg p \lor q) \equiv p \land \neg q\) (en utilisant les lois de De Morgan).
+    \item Utilisez des règles comme la distribution et la simplification pour démontrer que l'expression est une tautologie.
+    \item L'argument est valide et s'appelle Modus Tollens en logique formelle. Il utilise l'implication et sa négation pour en tirer une conclusion valide.
+\end{enumerate}
+
+
+\end{document}
