@@ -127,3 +127,10 @@ grades = """
 21812377 2 2,5
 """
 
+grades = grades.split("\n")
+grades = [grade.split(" ") for grade in grades]
+
+grades = [(grade[0], grade[1], grade[2]) for grade in grades if len(grade) == 3]
+grades = [(grade[0], grade[1], grade[2]) for grade in grades if grade[2] != "ABI"]
+
+average = sum([float(grade[2].replace(",", ".")) for grade in grades]) / len(grades)
